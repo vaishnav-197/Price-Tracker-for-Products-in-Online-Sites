@@ -21,7 +21,7 @@ def check_price() :
     print(title.strip())
     print(converted_price)
 
-    if converted_price<320 :
+    if converted_price<330 :
         send_mail()
 
 def send_mail()  :
@@ -31,15 +31,15 @@ def send_mail()  :
     server.ehlo()
     
     
-    server.login('username' , 'generated password')
+    server.login('ivoryblacklight@gmail.com' , 'zvpqhbcovzjrqxmq')
     
     subject = 'Price Decreased'
     body= 'https://www.amazon.in/Tetley-Green-Ginger-Mint-Lemon/dp/B00MGFZEVW/ref=lp_21246951031_1_9?srs=21246951031&ie=UTF8&qid=1587071732&sr=8-9'
     msg= f"Subject : {subject}\n\n{body}"
     
     server.sendmail(
-        'mailid',
-        'mailid',
+        'ivoryblacklight@mgail.com',
+        'vaishnavea18@gmail.com',
         msg
     )
     print("MAIL SENT")
@@ -47,5 +47,6 @@ def send_mail()  :
     
     while True :
      check_price()
-     time.sleep(60*60*60)
-    
+     time.sleep(3600*3600)
+
+check_price()
