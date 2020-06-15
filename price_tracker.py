@@ -31,7 +31,7 @@ def send_mail()  :
     server.ehlo()
     
     
-    server.login('ivoryblacklight@gmail.com' , 'zvpqhbcovzjrqxmq')
+    server.login('ivoryblacklight@gmail.com' , '###')
     
     subject = 'Price Decreased'
     body= 'https://www.amazon.in/Tetley-Green-Ginger-Mint-Lemon/dp/B00MGFZEVW/ref=lp_21246951031_1_9?srs=21246951031&ie=UTF8&qid=1587071732&sr=8-9'
